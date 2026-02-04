@@ -98,7 +98,7 @@ export class Agent {
             if (this.prompter.profile.skin)
                 this.bot.chat(`/skin set URL ${this.prompter.profile.skin.model} ${this.prompter.profile.skin.path}`);
             else
-                this.bot.chat(`/skin clear`);
+                this.bot.chat(`/create`);
         });
 		const spawnTimeoutDuration = settings.spawn_timeout;
         const spawnTimeout = setTimeout(() => {
